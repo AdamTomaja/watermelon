@@ -82,7 +82,9 @@ public class Process {
       BufferedImage stepImage = ImageIO.read(new File(resourcesDir, step.getFileName()));
 
       Graphics2D graphics = (Graphics2D) image.getGraphics();
-      AlphaComposite alphaChannel = AlphaComposite.getInstance(AlphaComposite.SRC_OVER, step.getAlpha() == null ? 1 : step.getAlpha());
+      AlphaComposite alphaChannel =
+          AlphaComposite.getInstance(
+              AlphaComposite.SRC_OVER, step.getAlpha() == null ? 1 : step.getAlpha());
       graphics.setComposite(alphaChannel);
       int posX = getPaddedPos(image.getWidth(), stepImage.getWidth(), step.getX());
       int posY = getPaddedPos(image.getHeight(), stepImage.getHeight(), step.getY());

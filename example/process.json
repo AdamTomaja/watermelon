@@ -1,0 +1,38 @@
+{
+  "inputDirectory": "input",
+  "outputDirectory": "output",
+  "resourcesDirectory": "res",
+  "steps": [
+    {
+      "type": "SCALE",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "type": "WRITE_IMAGE",
+      "fileName": "watermark-1.png",
+      "alpha": 0.5,
+      "x": 50,
+      "y": 50
+    },
+    {
+      "type": "WRITE_IMAGE",
+      "fileName": "watermark-1.png",
+      "alpha": 0.5,
+      "x": -50,
+      "y": -50
+    },
+    {
+      "type": "WRITE_IMAGE",
+      "fileName": "watermark-2.png",
+      "x": 50,
+      "y": -50
+    },
+    {
+      "type": "WRITE_IMAGE",
+      "fileName": "watermark-2.png",
+      "x": -50,
+      "y": 50
+    }
+  ]
+}

@@ -1,9 +1,8 @@
 package com.cydercode.watermelon;
 
 import com.cydercode.watermelon.config.ProcessConfig;
-import lombok.extern.slf4j.Slf4j;
-
 import java.io.IOException;
+import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class App {
